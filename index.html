@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Background Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none; 
+        }
+        body{
+            overflow: hidden;
+
+        }
+        img{
+            max-width: 100%;
+        }
+        .sky{
+            min-height: 100vh;
+            background: url(images/sky.png) repeat-x;
+            position: relative;
+            overflow: hidden;
+            animation: animatebg 70s linear infinite;
+        }
+        @keyframes animatebg {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: -1000px 0;
+            }
+        }
+        .moon{
+            max-width: 300px;
+            position: absolute;
+            left: 100px;
+            top: 3 0px;
+            animation: moon 30s linear;
+        }
+        @keyframes moon {
+            0%{
+                left: -15%;      
+            }
+            100%{
+                left: 400px;
+            }
+        }
+        .land{
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="sky">
+            <div class="moon"><img src="images/moon.png" alt=""></div>
+            <div class="land"><img src="images/land.png" alt=""></div>
+        </div>
+    </main>
+    
+</body>
+</html>
