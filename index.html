@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
     <title>Sky Background Animation</title>
     <style>
         *{
@@ -14,6 +15,7 @@
         }
         body{
             overflow: hidden;
+            
 
         }
         img{
@@ -54,13 +56,143 @@
             bottom: -5px;
             left: 0;
         }
+        div.txt
+        {
+            text-align: center;
+            position: absolute;
+            width: 20%;
+            color: white;
+            top: 50%;
+            left: 50%; 
+            padding: 5px 10px;
+            background-color: rgba(94, 108, 171, 0.373);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(1px);
+            -webkit-backdrop-filter: blur(1px);
+            transform: translateX(80%) translateY(300%); 
+            
+        }
+        .h2{
+            padding: 5px 10px;
+            color: white;
+            letter-spacing: 1px;
+            font-family: courier;
+        }
+.Iam {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+  padding: 2em 5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+  transform: translateX(-40%) translateY(-70%);
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #cfc20c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 5s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 5s;
+        animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+} 
+            
+    
     </style>
 </head>
 <body>
     <main>
+    
+        
+        
         <div class="sky">
             <div class="moon"><img src="images/moon.png" alt=""></div>
             <div class="land"><img src="images/land.png" alt=""></div>
+            <a href="parallex.html">
+            <div class="txt"><h2>Know more about me</h2></div></a>
+            <div class="Iam">
+
+                <p>Hello, I am</p>
+                <b>
+                  <div class="innerIam">
+                    Manu<br /> 
+                    designer<br />
+                    frontend developer<br />
+                    story-writer<br />
+                    tech-enthusiast
+                    </div>
+                </b>
+                
+            </div>
         </div>
     </main>
     
